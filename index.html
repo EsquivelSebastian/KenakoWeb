@@ -16,24 +16,25 @@
         <div class="brand">
           <h2>Esquivel <span>Sebastian</span> </h2>
         </div >
-       <ul class="menu" >
+       <ul class="menu" id="menu" >
         <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About me</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
        </ul>
+       <div class="toggleMenu"><i class="fa-solid fa-bars" id="menuBars" ></i></div>
       </nav>
     </header>
     <main class="main" >
 
       <div class="infoContent">
-  
+  <span class="infoContent" >Full Stack - Web Developer</span>
         <h1>Desarrollador Web</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia magni soluta, dignissimos nemo doloribus officia, ratione ex doloremque, suscipit rem deserunt cum quia earum est eligendi ea inventore voluptatibus!</p>
-        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
-          <i class="fa-brands fa-2x fa-linkedin-in"></i>
-          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
-        </a>
+        <div class="socialnet">
+        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/"><i class="fa-brands fa-2x fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+      </div>
       </div>
       <img src="img/me-removebg-preview.png" alt="EsquivelSebastianPhoto">
       </main>
@@ -68,6 +69,30 @@
           <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
       </div>
     </div>
+    <div class="card">
+      <div class="cardImage">
+      </div>
+      <div class="cardTitle">
+        <h2>Description</h2>
+      </div>
+      <div class="projectsLinks">
+        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
+          <i class="fa-brands fa-2x fa-linkedin-in"></i>
+          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardImage">
+      </div>
+      <div class="cardTitle">
+        <h2>Description</h2>
+      </div>
+      <div class="projectsLinks">
+        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
+          <i class="fa-brands fa-2x fa-linkedin-in"></i>
+          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+      </div>
+    </div>
   </div>
 </div>
 <div class="contactSection">
@@ -75,19 +100,30 @@
     <h2>Keep in touch!</h2>
     <div class="divider"></div>
   </div>
-
   <div class="containerContact">
     <img src="./img/me-removebg-preview.png" id="photoContact" alt="">
     <div class="contactForm">
       <h4>Drop a message!</h4>
       <form class="form">
-        <input type="text" placeholder="name" >
+        <input type="text" placeholder="Name" >
         <input type="email" placeholder="E-mail" >
         <textarea placeholder="Place your message here..."></textarea>
-        <button type="submit" class="btn btn-submit" >Send</button>
+        <button type="submit" class="btn-submit" >Send</button>
       </form>
     </div>
   </div>
 </div>
+<footer class="footer" >
+  <div class="footerContent">
+    <h2>Esquivel Sebastian</h2>
+    <h5>Web Developer</h5>
+    <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
+      <div class="socialNetwork">
+      <i class="fa-brands fa-2x fa-linkedin-in"></i></a>
+      <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="./js/scripts.js"></script>
 </body>
 </html>
