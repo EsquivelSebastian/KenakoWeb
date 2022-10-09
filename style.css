@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -26,9 +30,23 @@ body {
   justify-content: space-between;
   padding: 2em;
 }
+.active{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  width: 100vw;
+}
 
 .brand{
   margin-top: -7px;
+  
+}
+.brand h2,
+.brand span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px
 }
 
 
@@ -38,10 +56,13 @@ body {
   justify-content: space-around;
 }
 
+
+
 .menu a{
 color: #fff;
 text-decoration: none;
-padding: 10px 20px;
+padding: 10px 30px;
+border-radius: 30%;
 }
 .menu li{
   list-style: none;
@@ -50,20 +71,40 @@ padding: 10px 20px;
 .menu .active{
   color: aqua;
 }
-.menu a:hover{
-  background-color: aqua;
-  color: #191c32;
-  transition: ease-in .3s;
-  
+.menu a{
+  position: relative;
+  font-size: 20px;
+}
+.menu a:after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0%;
+  top: 35px;
+  left: 30px;
 }
 
-.toggleManu,
+.menu a:hover:after{
+ width: 60%;
+  transition: 0.3s;
+}
+
+.toggleMenu{
+  display: none;
+}
 .infoContent span{
   display: none;
 }
 
-#menuBars{
-  display: none;
+.headerNav{
+  position: relative;
+}
+.headerNav ul,
+.brand,
+.menu ul,
+.menu a{
+  position: relative;
 }
 
 .main {
@@ -107,7 +148,7 @@ text-align: center;
 .main img{
   width: 350px;
   border: solid aqua 3px;
-  z-index: 1;
+  
   margin-right: 60px;
 }
 
@@ -120,10 +161,10 @@ text-align: center;
 
 .about img{
   height: 100vh;
+  width: 100vw;
 }
 .aboutInfo{
-  grid-column: 5/10;
-  padding: 3em;
+ padding: 3em;
  }
  .aboutInfo h2 {
   font-size: 2em;
@@ -261,43 +302,58 @@ text-align: center;
   margin-top: 1em;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
+
+  .toggleMenu{
+    display: block;
+  }
+ 
   .menu{
     flex-direction: column;
     justify-content: center;
     position: absolute;
+    padding-left: 25px;
     top: 0%;
     left: 0%;
     height: 100vh;
+    width: 100vw;
     background-color: #2b3058;
     z-index: 100;
     transform: translateX(-110%);
     transition: all .5s ease-in-out;
   }
-  .toggleManu{
-    display: block;
+  
+  #menuBars{
+    display: flex;
     font-size: 1.5em;
   }
   .show-menu{
 
-    transform: translateX(0%);
+    transform: translateX(-15%);
     transition: all .5s ease-in-out;
 
   }
   .menu li{
     margin: 1.5em;
   }
+  .main{
+    height: auto;
+  }
   .main,
   .about,
-  
   .contactSection{
     display: flex;
     flex-direction: column-reverse;
   }
+  .about{
+    height: auto;
+  }
+ 
   .main img,
   #photoContact{
     width: min(70%, 320px);
     height: auto;
+    margin-right: 0%;
   }
   .infoContent{
     display: flex;
@@ -308,8 +364,12 @@ text-align: center;
   .infoContent h1{
     margin-top: 1em;
   }
-  .infoContent p,
-  .portfolio
+  .infoContent img{
+    margin: 0 auto;
+  }
+  #p,
+  .portfolio,
+  .about img
   {
     display: none;
   }
