@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +81,9 @@ h1 {
 .info-content span {
   color: aqua;
 }
+.info-content__p{
+  font-family: 'Rubik', sans-serif;}
+
 
 .download-cv,
 .project-details-button {
@@ -139,6 +142,7 @@ h1 {
 
 .about p {
   margin-bottom: 1em;
+  font-family: 'Rubik', sans-serif;
 }
 
 .portfolio,
@@ -533,6 +537,13 @@ h1 {
   .form-group {
     width: 80vw;
 
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
 }
