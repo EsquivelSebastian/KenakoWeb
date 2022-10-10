@@ -1,250 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper,
-.portfolio,
-.contactSection{
-   width: 100vw;
-   height: 100vh;
-   background-color: #191c32;
-   color: #fff;
-
-}
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
-}
-.active{
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2em;
+.wrapper {
   width: 100vw;
+  height: 100vh;
+  background-color: #191c32;
+  color: #fff;
 }
 
-.brand{
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand {
   margin-top: -7px;
-  
-}
-.brand h2,
-.brand span{
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px
 }
 
+.brand span {
+  color: aqua;
+}
 
-.menu{
+.menu {
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
 
-
-
-.menu a{
-color: #fff;
-text-decoration: none;
-padding: 10px 30px;
-border-radius: 30%;
-}
-.menu li{
+.menu li {
   list-style: none;
+
 }
 
-.menu .active{
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: aqua;
+  color: #191c32;
+}
+
+.menu .active {
   color: aqua;
-}
-.menu a{
-  position: relative;
-  font-size: 20px;
-}
-.menu a:after{
-  content: "";
-  position: absolute;
-  background-color: #ff3c78;
-  height: 3px;
-  width: 0%;
-  top: 35px;
-  left: 30px;
+
 }
 
-.menu a:hover:after{
- width: 60%;
-  transition: 0.3s;
-}
-
-.toggleMenu{
+.toggle-menu,
+.info-content__subtitle,
+.info-content .sotial-networks {
   display: none;
-}
-.infoContent span{
-  display: none;
-}
-
-.headerNav{
-  position: relative;
-}
-.headerNav ul,
-.brand,
-.menu ul,
-.menu a{
-  position: relative;
 }
 
 .main {
-
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: clamp(4vw, 1.5em, 3em);
+}
+
+.info-content span {
+  color: aqua;
+}
+
+.download-cv,
+.project-details-button {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+.main img {
+  border: 4px solid aqua;
+  width: 400px;
+  height: 520px;
+  min-height: 300px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
   align-items: center;
 }
 
-h1{
-  font-size: clamp(4vw, 1.5em, 3em );
-}
-.infoContent{
-text-align: center;
-}
-.infoContent p{
-  padding: 5px 0px 5px;
-  font-family: 'Courgette', cursive;
+.about img {
+  max-width: 100%;
+  grid-column: 1/5;
 }
 
-.infoContent i{
-  width: 50px;
-  padding: 10px;
-  margin-left:10px ;
-  margin-top: 5px;
-  color: #fff;
-  border: solid aqua 0.5px;
-  
-  border-radius: 20%;
-  box-shadow: 8px 5px 20px -8px rgba(102, 231, 200, .69)
-}
-.infoContent i:hover,
-.btn-submit:hover{
-  box-shadow: 8px 5px 20px -8px rgba(252, 96, 44, 0.69)
-
-
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
 }
 
-.main img{
-  width: 350px;
-  border: solid aqua 3px;
-  
-  margin-right: 60px;
-}
-
-.about{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center; 
-}
-
-.about img{
-  height: 100vh;
-  width: 100vw;
-}
-.aboutInfo{
- padding: 3em;
- }
- .aboutInfo h2 {
+.about-info h2 {
   font-size: 2em;
-  font-weight: 600;
   color: #191c32;
+}
 
- }
- .divider{
+.divider {
   height: 4px;
   width: 60px;
-  background-color: #191c32;
+  background-color: aqua;
   margin-top: 5px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+}
 
- }
- .about p{
+.about p {
   margin-bottom: 1em;
- }
+}
 
- .portfolioHeadings{
+.portfolio,
+.contact-section {
   width: 100vw;
-  padding: 5em;
- }
- .portfolioHeadings h2{
-  font-size: 2.5em;
- }
-
- .portfolio .container{
-  width: 80vw;
-  height: 50vh;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
- }
-
- .card{
-  width: 380px;
-  border: 2px solid whitesmoke;
-  margin: 1em;
-
- }
-
- .cardImage{
-  width: 100%;
-  height: 150px;
-  
- }
- .cardTitle{
-  padding: 20px;
-  text-align: center;
- }
- .projectsLinks{
-  display: flex;
-  justify-content: space-evenly;
+  background-color: #191c32;
   color: #fff;
- }
- #photoContact{
-  opacity: .3;
- }
- .contactSection{
+}
+
+.portfolio-heading {
+  width: 100vw;
   display: flex;
- }
- .contactSection h2{
-  font-size: 3em;
-  font-weight: 600;
- }
- .containerContact{
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  margin: 0 auto;
   display: flex;
   align-items: center;
- }
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-.form{
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
   width: 30vw;
-  margin-top: 3em;
-
+  margin-top: 2em;
 }
 
-.form input{
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
   padding: 10px 20px;
   margin-bottom: 1em;
   background: none;
@@ -252,134 +254,285 @@ text-align: center;
   border-bottom: 1px solid #fff;
   color: #fff;
 }
-.containerContact{
-  padding: 3em;
-  margin: 0 auto;
-}
 
-.form textarea{
-  height: 150px;
-  background: none;
-  color: #fff;
-  padding: 1.5em;
-  border: none;
-  border-bottom: 1px solid #fff;
-
-}
-.btn-submit{
-  padding: 10px 20px; 
+.form-group .btn-submit {
+  padding: 10px 20px;
   margin: 1em;
+  border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  font-weight: bolder;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 8px 5px 20px -8px rgba(102, 231, 200, .69)
+  background-color: aqua;
 }
-.footer{
+
+
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 200px;
+  padding: 2em;
   background-color: aqua;
 }
-.footerContent h2{
+
+.footer-content h2 {
   font-size: 3em;
-  font-weight: 400;
 }
-.footerContent h5,
-.socialNetwork i{
+
+.footer-content h5 {
   font-size: 1.5em;
-  font-weight: 400;
+  text-align: center;
 }
-.socialNetwork{
+
+.sotial-networks {
   display: flex;
-  
-  justify-content: space-around;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 300px;
   margin-top: 1em;
 }
 
-@media (max-width: 1200px){
+.sotial-networks i {
+  font-size: 1.5em;
+}
 
-  .toggleMenu{
-    display: block;
-  }
- 
-  .menu{
+.portfolio,
+.contact-section {
+  width: 100vw;
+  height: 70vh;
+  background-color: #191c32;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10em;
+
+}
+
+.contact-form{
+
+}
+
+.contact-section img {
+ display: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: aqua;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+
+  .menu {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    padding-left: 25px;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     height: 100vh;
-    width: 100vw;
     background-color: #2b3058;
-    z-index: 100;
+    z-index: 1;
     transform: translateX(-110%);
     transition: all .5s ease-in-out;
   }
-  
-  #menuBars{
-    display: flex;
-    font-size: 1.5em;
-  }
-  .show-menu{
 
-    transform: translateX(-15%);
+  .show-menu {
+    transform: translateX(0%);
     transition: all .5s ease-in-out;
+  }
 
+  .menu li {
+    margin: 2em;
   }
-  .menu li{
-    margin: 1.5em;
+
+  .toggle-menu {
+    display: block;
   }
-  .main{
-    height: auto;
+
+  .fa-bars {
+    font-size: 1.5em;
+    margin-top: -.2em;
   }
+
+  .toggle-menu .fa-close {
+    font-size: 1.7em;
+    display: none;
+  }
+
   .main,
-  .about,
-  .contactSection{
+  .about {
     display: flex;
     flex-direction: column-reverse;
   }
-  .about{
+
+  .main img {
+    width: min(70%, 350px);
     height: auto;
   }
- 
-  .main img,
-  #photoContact{
-    width: min(70%, 320px);
-    height: auto;
-    margin-right: 0%;
-  }
-  .infoContent{
+
+  .info-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .infoContent h1{
-    margin-top: 1em;
+
+  .info-content .sotial-networks,
+  .info-content__subtitle {
+    display: block;
   }
-  .infoContent img{
-    margin: 0 auto;
+
+  .info-content__subtitle {
+    margin-bottom: .5em;
   }
-  #p,
-  .portfolio,
-  .about img
-  {
+
+  .info-content .sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .download-cv,
+  .info-content__p,
+  .contact-section__img {
     display: none;
   }
-  .socialnet {
- display: flex;
-    justify-content: space-around;
-    width: 100%;
+
+  .form-group {
+    width: 80vw;
+
   }
-  .contactHeadings h2{
-    font-size: 1.8em;
-  }
- 
+
 }

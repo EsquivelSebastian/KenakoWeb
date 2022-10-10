@@ -2,130 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Web Developer</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/cb0eb785e8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
+
 <body>
   <div class="wrapper">
-    <header class="headerNav">
-      <nav class="navbar" id="nav">
+    <header>
+      <nav class="navbar">
         <div class="brand">
-          <h2>Esquivel <span>Sebastian</span> </h2>
-        </div >
-       <ul class="menu" id="menu" >
-        <li><a class=".infoContent" href="#">Hola</a></li>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contacto</a></li>
-       </ul>
-       <div class="toggleMenu"><i class="fa-solid fa-bars" id="menuBars" ></i></div>
+          <h2>E<span>S</span></h2>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#"  class="active">Inicio</a></li>
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="toggle-menu">
+          <i class="fas fa-bars" id="toggle_open"></i>
+          <i class="fas fa-close" id="toggle_close"></i>
+        </div>
       </nav>
     </header>
-    <main class="main" >
+    <main class="main">
+      <div class="info-content">
+        <span class="info-content__subtitle">Full Stack - Web Developer</span>
+        <h1>Soy <span>Sebastian</span> Esquivel</h1>
+        <div class="sotial-networks">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+         <p class="info-content__p">Desarrollo Profesional de Sitios, Portales y Aplicaciones Web</p>
+         <p class="info-content__p">Traé tu idea y llevá tu marca a la web</p>
+        </div>
+      <img src="./img/me-removebg-preview.png" alt="">
+    </main>
+  </div>
+    <div class="about">
+      <img src="./img/FB_IMG_1664156187983.jpg" alt="">
+      <div class="about-info">
+        <h2>Sobre mi</h2>
+        <div class="divider"></div>
+        <p>A lo largo de mi carrera profesional estuve siempre en contacto con diferentes tecnologías, fue así que me acerqué al mundo de la programación web y quedé maravillado por la cantidad de desarrollos que se pueden hacer.</p>
+        <p>Hoy además de seguir con mi profesión de Lic. RRHH, también disfruto mucho de sumar mi ingenio y conocimientos tecnológicos a tu idea, para llevarla a la web.</p>
+        
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio-heading">
+        <h2>Mi Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container">
+        <h2>Proximamente...</h2>
 
-      <div class="infoContent">
-  <span class="infoContent" >Full Stack - Web Developer</span>
-        <h1>Programador Web Freelance</h1>
-        <p id="p">Desarrollo Profesional de Sitios, Portales y Aplicaciones Web</p>
-        <p id="p">Traé tu idea y llevá tu marca a la web</p>
-        <div class="socialnet">
-        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/"><i class="fa-brands fa-2x fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
-      </div>
-      </div>
-      <img src="img/me-removebg-preview.png" alt="EsquivelSebastianPhoto">
-      </main>
-  </div>
 
-  <div class="about" id="about" >
 
-    <img src="img/FB_IMG_1664156187983.jpg" alt="EsquivelSebastianPhotoPortada">
-    
-    <div class="aboutInfo" id="aboutInfo">
-      <h2>Sobre mí</h2>
-      <div class="divider"></div>
-      <p>A lo largo de mi carrera profesional estuve siempre en contacto con diferentes tecnologías, fue así que me acerqué al mundo de la programación web y quedé maravillado por la cantidad de desarrollos que se pueden hacer.</p>
-      <p>Hoy además de seguir con mi profesión de Lic. RRHH, también disfruto mucho de sumar mi ingenio y conocimientos tecnológicos a tu idea, para llevarla a la web.</p>
-    </div>
-  </div>
-<div class="portfolio" id="portfolio" >
-  <div class="portfolioHeadings">
-    <h2>My Portfolio</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="container">
-    <div class="card">
-      <div class="cardImage">
-      </div>
-      <div class="cardTitle">
-        <h2>Description</h2>
-      </div>
-      <div class="projectsLinks">
-        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
-          <i class="fa-brands fa-2x fa-linkedin-in"></i>
-          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
       </div>
     </div>
-    <div class="card">
-      <div class="cardImage">
+  
+    <div class="contact-section">
+      <div class="contact-heading">
+        <h2>Keep in touch</h2>
+        <div class="divider"></div>
       </div>
-      <div class="cardTitle">
-        <h2>Description</h2>
-      </div>
-      <div class="projectsLinks">
-        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
-          <i class="fa-brands fa-2x fa-linkedin-in"></i>
-          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="cardImage">
-      </div>
-      <div class="cardTitle">
-        <h2>Description</h2>
-      </div>
-      <div class="projectsLinks">
-        <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
-          <i class="fa-brands fa-2x fa-linkedin-in"></i>
-          <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+      <div class="container-contact">
+        <img class="contact-section__img" src="./img/FB_IMG_1664156187983.jpg" alt="">
+        <div class="contact-form">
+          <h4>Send me a message...</h4>
+          <form class="form-group">
+            <input type="text" placeholder="Name" class="input">
+            <input type="email" placeholder="Email" class="input">
+            <textarea name="message" placeholder="Place your message here..."></textarea>
+            <button type="submit" class="btn-submit">Send message</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="contactSection" id="contact" >
-  <div class="contactHeadings">
-    <h2>Keep in touch!</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="containerContact">
-    <img src="./img/me-removebg-preview.png" id="photoContact" alt="">
-    <div class="contactForm">
-      <h4>Drop a message!</h4>
-      <form class="form">
-        <input type="text" placeholder="Name" >
-        <input type="email" placeholder="E-mail" >
-        <textarea placeholder="Place your message here..."></textarea>
-        <button type="submit" class="btn-submit" >Send</button>
-      </form>
-    </div>
-  </div>
-</div>
-<footer class="footer" >
-  <div class="footerContent">
-    <h2>Esquivel Sebastian</h2>
-    <h5>Web Developer</h5>
-    <a class="icon" href="https://www.linkedin.com/in/esquivelsa/">
-      <div class="socialNetwork">
-      <i class="fa-brands fa-2x fa-linkedin-in"></i></a>
-      <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="./js/scripts.js"></script>
-</body>
-</html>
+  
+    <footer class="footer"> 
+      <div class="footer-content">
+        <h2>Sebastian Esquivel</h2>
+        <h5>Full Stack - Web Developer</h5>
+      </div>
+      <div class="sotial-networks">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
+    </footer>
+  <script src="/js/scripts.js"></script>
+  </body>
+</html>    

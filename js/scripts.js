@@ -1,18 +1,19 @@
 let menu = document.getElementById('menu');
-let menuColor = document.getElementById('menu');
-let menuBars = document.getElementById('menuBars');
-let menuHold = document.querySelector("#nav");
+let toggle_open = document.getElementById('toggle_open');
+let toggle_close = document.getElementById('toggle_close');
 
+toggle_open.addEventListener('click', toggleMenu);
+toggle_close.addEventListener('click', toggleMenu);
 
-menuBars.addEventListener('click', toggleMenu);
-function toggleMenu(){
-    menu.classList.toggle('show-menu');
+function toggleMenu() {
+  menu.classList.toggle('show-menu');
+
+  if(menu.classList.contains('show-menu')) {
+    toggle_open.style.display = 'none';
+    toggle_close.style.display = 'block';
+  }
+  else {
+    toggle_open.style.display = 'block';
+    toggle_close.style.display = 'none';
+  }
 }
-
-window.addEventListener('scroll', function(){
-    menuHold.classList.toggle('active', this.window.scrollY > 0)
-})
-
-let punto = window.addEventListener('scroll',function(){
-    this.window.screenY
-})
