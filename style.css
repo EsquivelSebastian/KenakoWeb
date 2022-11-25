@@ -496,7 +496,7 @@ h1 {
   }
 
   .main{
-    height: 70vh;
+    height: 60vh;
   }
 
 
@@ -507,7 +507,7 @@ h1 {
   }
 
   .main img {
-    width: min(75%, 350px);
+    width: min(75%, 370px);
     height: auto;
   }
 
