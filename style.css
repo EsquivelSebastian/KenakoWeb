@@ -507,9 +507,11 @@ h1 {
   }
 
   .main img {
-    width: min(75%, 370px);
-    height: auto;
+
+    width: min(95%, 470px);
+    height: min(75%, 370px)
   }
+
 
   .info-content {
     display: flex;
