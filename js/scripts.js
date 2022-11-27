@@ -1,6 +1,9 @@
 let menu = document.getElementById('menu');
 let toggle_open = document.getElementById('toggle_open');
-let toggle_close = document.getElementById('toggle_close');
+let toggle_close = document.querySelectorAll('#toggle_close');
+let btnSwitch = document.getElementById('switch');
+let lightTheme = document.getElementById('wrapper');
+let head = document.getElementById('headerid')
 
 
 toggle_open.addEventListener('click', toggleMenu);
@@ -16,5 +19,11 @@ function toggleMenu() {
   else {
     toggle_open.style.display = 'block';
     toggle_close.style.display = 'none';
-  }
+  } 
 }
+
+btnSwitch.addEventListener('click', () =>{
+    btnSwitch.classList.toggle('btnActive');
+    lightTheme.classList.toggle('lightTheme');
+    head.classList.toggle('lightThemeNavBar');
+  })

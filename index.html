@@ -6,22 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://kit.fontawesome.com/cb0eb785e8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <div class="wrapper" id="wrapper" >
+    <header  id="headerid">
       <nav class="navbar">
         <div class="brand">
           <h2>E<span>S</span></h2>
         </div>
         <ul class="menu" id="menu">
           <!-- <li><a href="#"  class="active">Inicio</a></li> -->
-          <li id="toggle_close" ><a href="#about">Sobre mi</a></li>
-          <li id="toggle_close" ><a href="#portfolio">Portafolio</a></li>
-          <li ><a href="https://www.linkedin.com/in/esquivelsa/">Contacto</a></li>
+          <li ><a  href="#about">Sobre mi</a></li>
+          <li ><a  href="#portfolio">Portafolio</a></li>
+          <li ><a  href="https://www.linkedin.com/in/esquivelsa/">Contacto</a></li>
         </ul>
+
+        <!-- BOTON LIGHT THEME -->
+
+        <!-- <button class="switch" id="switch">
+          <span class="light"><i class="fa-solid fa-sun"></i></span>
+          <span class="light"><i class="fa-sharp fa-solid fa-moon"></i></span> -->
+
+
+        </button>
         <div class="toggle-menu">
           <i class="fas fa-bars" id="toggle_open"></i>
           <i class="fas fa-close" id="toggle_close"></i>
@@ -29,7 +38,7 @@
       </nav>
     </header>
     <main class="main">
-      <div class="info-content">
+      <div class="info-content" id="main" >
         <span class="info-content__subtitle">Full Stack - Web Developer</span>
         <h1>Soy <span>Sebastian</span> Esquivel</h1>
         <div class="sotial-networks">
